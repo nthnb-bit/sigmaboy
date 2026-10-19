@@ -1,152 +1,468 @@
-<!DOCTYPE html>
-<html>
 
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <title>Times de Haikyuu!!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111115">
+  <meta name="description" content="Conheça os times e talentos de Haikyuu!!">
+  <title>HAIKYU!! | Além da Rede</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <a href="https://www.crunchyroll.com/pt-br/series/GY8VM8MWY/haikyu">
-    Crunchyroll Haikyuu!
-  </a>
+<header class="site-header">
+  <nav class="nav container">
+    <a class="logo" href="#inicio">
+      HAI<span>KYU!!</span><span class="logo-dot">●</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="#times">Times</a>
+      <a href="#talentos">Talentos</a>
+      <a class="nav-watch"
+         href="https://www.crunchyroll.com/pt-br/series/GY8VM8MWY/haikyu"
+         target="_blank" rel="noopener noreferrer">
+        Assistir ↗
+      </a>
+    </div>
+  </nav>
 </header>
 
-<h1>HAIKYU!!</h1>
-<p class="hero-sub">Os Times do Vôlei Colegial</p>
+<main>
 
+  <!-- INÍCIO -->
+  <section id="inicio" class="hero">
+    <div class="hero-grid"></div>
 
-<p class="team-badge">Colégio Karasuno</p>
-<h2>Os Corvos</h2>
-<img class="king" src="karasuno.png" alt="Karasuno">
+    <div class="container hero-content">
+      <p class="eyebrow">
+        <span class="eyebrow-line"></span>
+        O UNIVERSO DO VÔLEI COLEGIAL
+      </p>
 
-<p class="section-label">Filosofia</p>
-<p class="section-text">
-  A filosofia do Karasuno é a da evolução constante e da agressividade total, adotando o lema de que "não há vitória sem riscos". Eles se recusam a estagnar, preferindo absorver as táticas dos adversários no meio do jogo e usar um poder ofensivo implacável para destruir defesas.
-</p>
+      <h1>
+        VOE <span>ALTO.</span><br>
+        JOGUE <em>ALÉM.</em>
+      </h1>
 
-<p class="section-label">O Time</p>
-<p class="section-text">
-  Conhecidos como os "corvos caídos", eles se reerguem usando a imprevisibilidade. É um time focado puramente na ofensiva, famoso pelo "ataque rápido esquisito" de Kageyama e Hinata, saques potentes e o ataque sincronizado.
-</p>
+      <p class="hero-description">
+        O talento abre portas. O trabalho em equipe transforma jogos.
+        Descubra as escolas, rivalidades e jogadores que fazem de
+        <strong>HAIKYU!!</strong> uma história inesquecível.
+      </p>
 
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#times">
+          Explorar times ↗
+        </a>
+        <a class="btn btn-outline" href="#talentos">
+          Ver talentos ↓
+        </a>
+      </div>
 
-<p class="team-badge">Nekoma High School</p>
-<h2>Os Gatos</h2>
-<img class="neko" src="Nekoma.jpg" alt="Nekoma">
+      <div class="hero-stats">
+        <div><strong>08</strong><span>ESCOLAS</span></div>
+        <div><strong>16</strong><span>JOGADORES</span></div>
+        <div><strong>01</strong><span>PAIXÃO</span></div>
+      </div>
+    </div>
 
-<p class="section-label">Filosofia</p>
-<p class="section-text">
-  A filosofia do Nekoma é a resiliência e a conexão perfeita, simbolizada pela frase "nós somos o sangue que flui suavemente para manter o cérebro funcionando". Eles acreditam que, se a bola não cair no chão, o adversário eventualmente cometerá erros.
-</p>
+    <span class="hero-watermark">飛べ</span>
+  </section>
 
-<p class="section-label">O Time</p>
-<p class="section-text">
-  Rivais históricos do Karasuno, os "gatos" se destacam por uma defesa de chão impecável e recepções cirúrgicas. O time inteiro joga para proteger e dar suporte ao seu levantador, Kenma Kozume.
-</p>
+  <!-- TIMES -->
+  <section id="times" class="section container">
 
+    <div class="section-heading">
+      <div>
+        <p class="kicker">01 / AS ESCOLAS</p>
+        <h2>O CAMPO DE <span>BATALHA.</span></h2>
+      </div>
+      <p>Oito equipes. Oito identidades. Uma só quadra.</p>
+    </div>
 
-<p class="team-badge">Aoba Johsai / Seijoh</p>
-<h2>As Plantas Aquáticas</h2>
-<img class="sigma" src="Aoba johnsai.jpg" alt="Aoba Johsai">
+    <div class="teams-grid">
 
-<p class="section-label">Filosofia</p>
-<p class="section-text">
-  A filosofia do Seijoh se baseia no equilíbrio, na inteligência coletiva e no lema de que "o talento floresce, o instinto se afia". Eles acreditam que o voleibol é um esporte de seis jogadores e que a força de uma equipe vem da sinergia e da ausência de erros.
-</p>
+      <!-- KARASUNO -->
+      <article class="team-card" style="--team:#f29a24">
+        <div class="team-image">
+          <img src="karasuno.png" alt="Karasuno" loading="lazy">
+          <span class="team-number">01 / 08</span>
+        </div>
+        <div class="team-content">
+          <p class="team-school">MIYAGI • KARASUNO</p>
+          <h3>Os Corvos</h3>
+          <p class="team-tagline">VOE</p>
+          <div class="team-detail">
+            <strong>FILOSOFIA</strong>
+            <p>Evolução constante e coragem para arriscar. Karasuno se adapta durante as partidas e busca superar qualquer adversário.</p>
+          </div>
+          <div class="team-detail">
+            <strong>ESTILO DE JOGO</strong>
+            <p>Ataque rápido de Hinata e Kageyama, ofensiva imprevisível e ataques sincronizados.</p>
+          </div>
+        </div>
+      </article>
 
-<p class="section-label">O Time</p>
-<p class="section-text">
-  Comandado pelo brilhante levantador Tooru Oikawa, o Seijoh é um dos times mais completos e consistentes da província. Eles jogam um vôlei fluido, extremamente técnico e com saques agressivos.
-</p>
+      <!-- NEKOMA -->
+      <article class="team-card" style="--team:#d94848">
+        <div class="team-image">
+          <img src="Nekoma.jpg" alt="Nekoma" loading="lazy">
+          <span class="team-number">02 / 08</span>
+        </div>
+        <div class="team-content">
+          <p class="team-school">TÓQUIO • NEKOMA</p>
+          <h3>Os Gatos</h3>
+          <p class="team-tagline">CONECTE</p>
+          <div class="team-detail">
+            <strong>FILOSOFIA</strong>
+            <p>A conexão mantém o time vivo. Cada jogador faz sua parte para a bola continuar em jogo.</p>
+          </div>
+          <div class="team-detail">
+            <strong>ESTILO DE JOGO</strong>
+            <p>Recepção, cobertura e defesa consistentes, com Kenma conduzindo jogadas inteligentes.</p>
+          </div>
+        </div>
+      </article>
 
+      <!-- AOBA JOHSAI -->
+      <article class="team-card" style="--team:#7bd6c0">
+        <div class="team-image">
+          <img src="Aoba johnsai.jpg" alt="Aoba Johsai" loading="lazy">
+          <span class="team-number">03 / 08</span>
+        </div>
+        <div class="team-content">
+          <p class="team-school">MIYAGI • AOBA JOHSAI</p>
+          <h3>Seijoh</h3>
+          <p class="team-tagline">SINCRONIZE</p>
+          <div class="team-detail">
+            <strong>FILOSOFIA</strong>
+            <p>A força do coletivo surge do equilíbrio e de extrair o máximo potencial de cada jogador.</p>
+          </div>
+          <div class="team-detail">
+            <strong>ESTILO DE JOGO</strong>
+            <p>Oikawa distribui o jogo com precisão e lidera um elenco técnico, versátil e perigoso no saque.</p>
+          </div>
+        </div>
+      </article>
 
-<p class="team-badge">Date Tech</p>
-<h2>A Muralha de Ferro</h2>
-<img src="Date tech.jpg" alt="Date Tech">
+      <!-- DATE TECH -->
+      <article class="team-card" style="--team:#64b7de">
+        <div class="team-image">
+          <img src="Date tech.jpg" alt="Date Tech" loading="lazy">
+          <span class="team-number">04 / 08</span>
+        </div>
+        <div class="team-content">
+          <p class="team-school">MIYAGI • DATE TECH</p>
+          <h3>Muralha de Ferro</h3>
+          <p class="team-tagline">BLOQUEIE</p>
+          <div class="team-detail">
+            <strong>FILOSOFIA</strong>
+            <p>Disciplina, leitura de jogo e domínio da rede como primeira linha de defesa.</p>
+          </div>
+          <div class="team-detail">
+            <strong>ESTILO DE JOGO</strong>
+            <p>Bloqueios altos e coordenados, especialmente com Aone, dificultam o ataque rival.</p>
+          </div>
+        </div>
+      </article>
 
-<p class="section-label">Filosofia</p>
-<p class="section-text">
-  A filosofia do Date Tech é o domínio absoluto da rede através da intimidação e do bloqueio. Eles acreditam que uma defesa aérea intransponível é a melhor forma de quebrar o espírito do adversário.
-</p>
+      <!-- SHIRATORIZAWA -->
+      <article class="team-card" style="--team:#a18cce">
+        <div class="team-image">
+          <img src="Shiratorizawa.jpg" alt="Shiratorizawa" loading="lazy">
+          <span class="team-number">05 / 08</span>
+        </div>
+        <div class="team-content">
+          <p class="team-school">MIYAGI • SHIRATORIZAWA</p>
+          <h3>As Águias</h3>
+          <p class="team-tagline">DOMINE</p>
+          <div class="team-detail">
+            <strong>FILOSOFIA</strong>
+            <p>Confiança na força individual, na preparação e na excelência dos fundamentos.</p>
+          </div>
+          <div class="team-detail">
+            <strong>ESTILO DE JOGO</strong>
+            <p>Potência e consistência, com Wakatoshi Ushijima como principal referência ofensiva.</p>
+          </div>
+        </div>
+      </article>
 
-<p class="section-label">O Time</p>
-<p class="section-text">
-  Famosos pela "Muralha de Ferro", o Date Tech utiliza o sistema de "bloqueio de leitura", onde os jogadores se movem apenas após a bola sair da mão do levantador.
-</p>
+      <!-- FUKURODANI -->
+      <article class="team-card" style="--team:#d4ad62">
+        <div class="team-image">
+          <img src="image.png" alt="Fukurodani" loading="lazy">
+          <span class="team-number">06 / 08</span>
+        </div>
+        <div class="team-content">
+          <p class="team-school">TÓQUIO • FUKURODANI</p>
+          <h3>As Corujas</h3>
+          <p class="team-tagline">INSPIRE</p>
+          <div class="team-detail">
+            <strong>FILOSOFIA</strong>
+            <p>Um time forte dá suporte às suas estrelas e mantém a estabilidade coletiva.</p>
+          </div>
+          <div class="team-detail">
+            <strong>ESTILO DE JOGO</strong>
+            <p>O ataque explosivo de Bokuto se apoia na organização e no entrosamento da equipe.</p>
+          </div>
+        </div>
+      </article>
 
+      <!-- INARIZAKI -->
+      <article class="team-card" style="--team:#d6a956">
+        <div class="team-image">
+          <img src="ChatGPT Image 18 de jun. de 2026, 09_52_28.png" alt="Inarizaki" loading="lazy">
+          <span class="team-number">07 / 08</span>
+        </div>
+        <div class="team-content">
+          <p class="team-school">HYOGO • INARIZAKI</p>
+          <h3>As Raposas</h3>
+          <p class="team-tagline">SUPERE</p>
+          <div class="team-detail">
+            <strong>FILOSOFIA</strong>
+            <p>“Não precisamos de memórias”: o passado não deve limitar o próximo desafio.</p>
+          </div>
+          <div class="team-detail">
+            <strong>ESTILO DE JOGO</strong>
+            <p>Saques agressivos, velocidade e criatividade dos gêmeos Atsumu e Osamu Miya.</p>
+          </div>
+        </div>
+      </article>
 
-<p class="team-badge">Shiratorizawa Academy</p>
-<h2>As Águias</h2>
-<img src="Shiratorizawa.jpg" alt="Shiratorizawa">
+      <!-- ITACHIYAMA -->
+      <article class="team-card" style="--team:#9bd46f">
+        <div class="team-image">
+          <img src="itachimiya.jpg" alt="Itachiyama" loading="lazy">
+          <span class="team-number">08 / 08</span>
+        </div>
+        <div class="team-content">
+          <p class="team-school">TÓQUIO • ITACHIYAMA</p>
+          <h3>A Precisão</h3>
+          <p class="team-tagline">EXECUTE</p>
+          <div class="team-detail">
+            <strong>FILOSOFIA</strong>
+            <p>Preparação sólida, consistência e confiança nos fundamentos do vôlei.</p>
+          </div>
+          <div class="team-detail">
+            <strong>ESTILO DE JOGO</strong>
+            <p>Equipe de elite com talentos como Kiyoomi Sakusa e Motoya Komori.</p>
+          </div>
+        </div>
+      </article>
 
-<p class="section-label">Filosofia</p>
-<p class="section-text">
-  A filosofia do Shiratorizawa é a da força bruta, simplicidade e meritocracia. Eles rejeitam táticas complexas, acreditando que a potência física pura e a altura são os caminhos mais eficientes para esmagar qualquer oponente.
-</p>
+    </div>
+  </section>
 
-<p class="section-label">O Time</p>
-<p class="section-text">
-  O time funciona como uma verdadeira monarquia construída ao redor de seu capitão canhoto, Wakatoshi Ushijima, um dos melhores pontuadores do país.
-</p>
+  <!-- TALENTOS -->
+  <section id="talentos" class="talents-section">
+    <div class="container">
 
+      <div class="section-heading">
+        <div>
+          <p class="kicker">02 / ELITE EM QUADRA</p>
+          <h2>OS NOMES QUE <span>MARCAM.</span></h2>
+        </div>
+        <p>Jogadores de destaque no anime e no mangá, sem ranking geral.</p>
+      </div>
 
-<p class="team-badge">Fukurodani Academy</p>
-<h2>As Corujas</h2>
-<img src="image.png" alt="Fukurodani">
+      <div class="talent-note">
+        ★ Os cinco ases colegiais de destaque incluem Ushijima,
+        Sakusa, Kiryū, Bokuto e Aran.
+        Os demais são destaques em suas posições.
+      </div>
 
-<p class="section-label">Filosofia</p>
-<p class="section-text">
-  A filosofia do Fukurodani é o suporte mútuo e a maturidade coletiva. Eles entendem que uma grande estrela precisa de uma base sólida para brilhar.
-</p>
+      <div class="filters">
+        <button class="filter active" data-filter="all" aria-pressed="true">Todos</button>
+        <button class="filter" data-filter="ace" aria-pressed="false">Atacantes</button>
+        <button class="filter" data-filter="setter" aria-pressed="false">Levantadores</button>
+        <button class="filter" data-filter="middle" aria-pressed="false">Centrais</button>
+        <button class="filter" data-filter="libero" aria-pressed="false">Líberos</button>
+      </div>
 
-<p class="section-label">O Time</p>
-<p class="section-text">
-  Uma das maiores potências de Tóquio, o time é liderado pelo carismático atacante Kotaro Bokuto. Como Bokuto é propenso a crises de humor e oscilações emocionais em quadra, os outros membros do Fukurodani mantêm o placar estável até que seu capitão recupere o foco.
-</p>
+      <div class="players-grid">
 
+        <article class="player-card" data-position="ace">
+          <span class="player-index">01</span>
+          <div class="player-meta">SHIRATORIZAWA • OPOSTO / ÁS</div>
+          <h3>Wakatoshi <span>Ushijima</span></h3>
+          <p>Potência extraordinária, ataques canhotos e incrível consistência.</p>
+          <span class="player-pill">TOP 3 ASES</span>
+        </article>
 
-<p class="team-badge">Inarizaki</p>
-<h2>Os Gêmeos Miya</h2>
-<img src="ChatGPT Image 18 de jun. de 2026, 09_52_28.png" alt="Inarizaki">
+        <article class="player-card" data-position="ace">
+          <span class="player-index">02</span>
+          <div class="player-meta">ITACHIYAMA • PONTEIRO / ÁS</div>
+          <h3>Kiyoomi <span>Sakusa</span></h3>
+          <p>Controle técnico refinado e ataques com rotação difícil de receber.</p>
+          <span class="player-pill">TOP 3 ASES</span>
+        </article>
 
-<p class="section-label">Filosofia</p>
-<p class="section-text">
-  Baseia-se no lema "não precisamos de memórias", focando totalmente no presente. Para eles, o sucesso passado gera estagnação, sendo necessário arriscar e evoluir constantemente.
-</p>
+        <article class="player-card" data-position="ace">
+          <span class="player-index">03</span>
+          <div class="player-meta">MUJINAZAKA • PONTEIRO / ÁS</div>
+          <h3>Wakatsu <span>Kiryū</span></h3>
+          <p>Força e habilidade para transformar levantamentos difíceis em pontos.</p>
+          <span class="player-pill">TOP 3 ASES • MANGÁ</span>
+        </article>
 
-<p class="section-label">O Time</p>
-<p class="section-text">
-  É uma força avassaladora e imprevisível em quadra. O coração da equipe são os Gêmeos Miya, Atsumu e Osamu, capazes de copiar e aprimorar jogadas rivais em minutos.
-</p>
+        <article class="player-card" data-position="ace">
+          <span class="player-index">04</span>
+          <div class="player-meta">FUKURODANI • PONTEIRO / ÁS</div>
+          <h3>Kōtarō <span>Bokuto</span></h3>
+          <p>Ângulos de ataque impressionantes e explosão ofensiva.</p>
+          <span class="player-pill">TOP 5 ASES</span>
+        </article>
 
+        <article class="player-card" data-position="ace">
+          <span class="player-index">05</span>
+          <div class="player-meta">INARIZAKI • PONTEIRO / ÁS</div>
+          <h3>Aran <span>Ojiro</span></h3>
+          <p>Grande impulsão e finalizações poderosas mesmo sob pressão.</p>
+          <span class="player-pill">TOP 5 ASES</span>
+        </article>
 
-<p class="team-badge">Itachiyama</p>
-<h2>A Precisão Cirúrgica</h2>
-<img src="itachimiya.jpg" alt="Itachiyama">
+        <article class="player-card" data-position="setter">
+          <span class="player-index">06</span>
+          <div class="player-meta">KARASUNO • LEVANTADOR</div>
+          <h3>Tobio <span>Kageyama</span></h3>
+          <p>Precisão excepcional, leitura de quadra e evolução técnica constante.</p>
+          <span class="player-pill">LEVANTADOR</span>
+        </article>
 
-<p class="section-label">Filosofia</p>
-<p class="section-text">
-  Pauta-se no realismo, na preparação minuciosa e no controle absoluto de riscos. Em vez do caos, o time busca a precisão cirúrgica, a resiliência mental e a eliminação de erros simples.
-</p>
+        <article class="player-card" data-position="setter">
+          <span class="player-index">07</span>
+          <div class="player-meta">INARIZAKI • LEVANTADOR</div>
+          <h3>Atsumu <span>Miya</span></h3>
+          <p>Saques perigosos, criatividade e habilidade para elevar seus atacantes.</p>
+          <span class="player-pill">LEVANTADOR</span>
+        </article>
 
-<p class="section-label">O Time</p>
-<p class="section-text">
-  Apresenta o equilíbrio perfeito entre ataque e defesa. Destacam-se Kiyoomi Sakusa, Motoya Komori e Tsukasa Iizuna.
-</p>
-<h2>Os Mais talentosos do japão</h2>
-<ul>
-  <li>Hinata Shoyo</li>
-  <li>Bokuto</li>
-  <li>Kageyama</li>
-</ul>
+        <article class="player-card" data-position="setter">
+          <span class="player-index">08</span>
+          <div class="player-meta">AOBA JOHSAI • LEVANTADOR</div>
+          <h3>Tōru <span>Oikawa</span></h3>
+          <p>Estratégia, saques devastadores e talento para extrair o melhor do time.</p>
+          <span class="player-pill">LEVANTADOR</span>
+        </article>
 
+        <article class="player-card" data-position="ace">
+          <span class="player-index">09</span>
+          <div class="player-meta">KAMOMEDAI • PONTEIRO</div>
+          <h3>Kōrai <span>Hoshiumi</span></h3>
+          <p>Salto impressionante, versatilidade e técnica completa apesar da baixa estatura.</p>
+          <span class="player-pill">ATACANTE • MANGÁ</span>
+        </article>
 
-<footer>
-  Haikyu!! — Times do Vôlei Colegial
+        <article class="player-card" data-position="middle">
+          <span class="player-index">10</span>
+          <div class="player-meta">KARASUNO • CENTRAL</div>
+          <h3>Shōyō <span>Hinata</span></h3>
+          <p>Velocidade, impulsão extraordinária e um instinto ofensivo único.</p>
+          <span class="player-pill">CENTRAL</span>
+        </article>
+
+        <article class="player-card" data-position="middle">
+          <span class="player-index">11</span>
+          <div class="player-meta">NEKOMA • CENTRAL</div>
+          <h3>Tetsurō <span>Kuroo</span></h3>
+          <p>Bloqueio inteligente, leitura de ataques e liderança defensiva.</p>
+          <span class="player-pill">CENTRAL</span>
+        </article>
+
+        <article class="player-card" data-position="middle">
+          <span class="player-index">12</span>
+          <div class="player-meta">KAMOMEDAI • CENTRAL</div>
+          <h3>Sachirō <span>Hirugami</span></h3>
+          <p>Disciplina e excelência no bloqueio de leitura.</p>
+          <span class="player-pill">CENTRAL • MANGÁ</span>
+        </article>
+
+        <article class="player-card" data-position="libero">
+          <span class="player-index">13</span>
+          <div class="player-meta">KARASUNO • LÍBERO</div>
+          <h3>Yū <span>Nishinoya</span></h3>
+          <p>Reflexos rápidos, recepções difíceis e energia contagiante.</p>
+          <span class="player-pill">LÍBERO</span>
+        </article>
+
+        <article class="player-card" data-position="libero">
+          <span class="player-index">14</span>
+          <div class="player-meta">NEKOMA • LÍBERO</div>
+          <h3>Morisuke <span>Yaku</span></h3>
+          <p>Posicionamento impecável e uma das defesas mais confiáveis da série.</p>
+          <span class="player-pill">LÍBERO</span>
+        </article>
+
+        <article class="player-card" data-position="libero">
+          <span class="player-index">15</span>
+          <div class="player-meta">ITACHIYAMA • LÍBERO</div>
+          <h3>Motoya <span>Komori</span></h3>
+          <p>Um dos maiores talentos defensivos da geração colegial.</p>
+          <span class="player-pill">LÍBERO</span>
+        </article>
+
+        <article class="player-card" data-position="setter">
+          <span class="player-index">16</span>
+          <div class="player-meta">NEKOMA • LEVANTADOR</div>
+          <h3>Kenma <span>Kozume</span></h3>
+          <p>Análise tática e controle do ritmo das partidas.</p>
+          <span class="player-pill">LEVANTADOR</span>
+        </article>
+
+      </div>
+
+      <p class="spoiler-note">
+        A seção inclui personagens do mangá, mas evita revelar
+        resultados de partidas e acontecimentos finais.
+      </p>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <strong>HAI<span>KYU!!</span></strong>
+      <p>Além da rede. Além dos limites.</p>
+    </div>
+
+    <p>
+      Projeto de fã não oficial. Haikyuu!! pertence aos seus
+      respectivos criadores e detentores de direitos.
+    </p>
+
+    <a href="#inicio">↑ TOPO</a>
+  </div>
 </footer>
+
+<!-- FILTROS DOS JOGADORES -->
+<script>
+  const filters = document.querySelectorAll('.filter');
+  const players = document.querySelectorAll('.player-card');
+
+  filters.forEach(button => {
+    button.addEventListener('click', () => {
+      const selected = button.dataset.filter;
+
+      filters.forEach(item => {
+        const active = item === button;
+        item.classList.toggle('active', active);
+        item.setAttribute('aria-pressed', String(active));
+      });
+
+      players.forEach(card => {
+        card.hidden =
+          selected !== 'all' &&
+          card.dataset.position !== selected;
+      });
+    });
+  });
+</script>
 
 </body>
 </html>
