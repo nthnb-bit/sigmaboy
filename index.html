@@ -441,28 +441,74 @@
 </footer>
 
 <!-- FILTROS DOS JOGADORES -->
+
+<!-- LINKS DOS PERSONAGENS E FILTROS -->
 <script>
-  const filters = document.querySelectorAll('.filter');
-  const players = document.querySelectorAll('.player-card');
+  const filtros = document.querySelectorAll('.filter');
+  const jogadores = document.querySelectorAll('.player-card');
 
-  filters.forEach(button => {
-    button.addEventListener('click', () => {
-      const selected = button.dataset.filter;
+  // Links das páginas dos personagens na Wiki
+  const linksWiki = [
+    "Wakatoshi_Ushijima",
+    "Kiyoomi_Sakusa",
+    "Wakatsu_Kiryū",
+    "Kōtarō_Bokuto",
+    "Aran_Ojiro",
+    "Tobio_Kageyama",
+    "Atsumu_Miya",
+    "Tōru_Oikawa",
+    "Kōrai_Hoshiumi",
+    "Shōyō_Hinata",
+    "Tetsurō_Kuroo",
+    "Sachirō_Hirugami",
+    "Yū_Nishinoya",
+    "Morisuke_Yaku",
+    "Motoya_Komori",
+    "Kenma_Kozume"
+  ];
 
-      filters.forEach(item => {
-        const active = item === button;
-        item.classList.toggle('active', active);
-        item.setAttribute('aria-pressed', String(active));
+  // Transforma o nome de cada jogador em um link
+  jogadores.forEach((card, index) => {
+    const titulo = card.querySelector('h3');
+
+    if (!titulo || !linksWiki[index]) return;
+
+    const link = document.createElement('a');
+
+    link.href = "https://haikyuu.fandom.com/wiki/" +
+      encodeURIComponent(linksWiki[index]);
+
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.className = "player-link";
+    link.title = "Ver personagem na Wiki de Haikyuu!!";
+
+    // Mantém a formatação original do nome
+    link.innerHTML = titulo.innerHTML;
+
+    titulo.replaceChildren(link);
+  });
+
+  // Filtros por posição
+  filtros.forEach(botao => {
+    botao.addEventListener('click', () => {
+      const selecionado = botao.dataset.filter;
+
+      filtros.forEach(item => {
+        const ativo = item === botao;
+        item.classList.toggle('active', ativo);
+        item.setAttribute('aria-pressed', String(ativo));
       });
 
-      players.forEach(card => {
+      jogadores.forEach(card => {
         card.hidden =
-          selected !== 'all' &&
-          card.dataset.position !== selected;
+          selecionado !== 'all' &&
+          card.dataset.position !== selecionado;
       });
     });
   });
 </script>
+
 
 </body>
 </html>
